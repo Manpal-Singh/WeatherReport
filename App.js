@@ -163,11 +163,11 @@ export default class App extends React.Component {
         style={{marginTop:30}}
         key={keyGenerator.key}
           data={[
-            {index:0, key: this.state.weatherData[0].Day, temp: this.state.weatherData[0].Day_temp, description: this.state.weatherData[0].Day_status},
-            {index:1, key: this.state.weatherData[1].Day, temp: this.state.weatherData[1].Day_temp, description: this.state.weatherData[1].Day_status},
-            {index:2, key: this.state.weatherData[2].Day, temp: this.state.weatherData[2].Day_temp, description: this.state.weatherData[2].Day_status},
-            {index:3, key: this.state.weatherData[3].Day, temp: this.state.weatherData[3].Day_temp, description: this.state.weatherData[3].Day_status},
-            {index:4, key: this.state.weatherData[4].Day, temp: this.state.weatherData[4].Day_temp, description: this.state.weatherData[4].Day_status},
+            {key: this.state.weatherData[0].Day, temp: this.state.weatherData[0].Day_temp, description: this.state.weatherData[0].Day_status},
+            {key: this.state.weatherData[1].Day, temp: this.state.weatherData[1].Day_temp, description: this.state.weatherData[1].Day_status},
+            {key: this.state.weatherData[2].Day, temp: this.state.weatherData[2].Day_temp, description: this.state.weatherData[2].Day_status},
+            {key: this.state.weatherData[3].Day, temp: this.state.weatherData[3].Day_temp, description: this.state.weatherData[3].Day_status},
+            {key: this.state.weatherData[4].Day, temp: this.state.weatherData[4].Day_temp, description: this.state.weatherData[4].Day_status},
           ]}
           
           renderItem={({item}) => 
@@ -216,7 +216,7 @@ button: {
   borderRadius: 40,
   alignItems: 'center',
   backgroundColor: '#2196F3',
-  marginTop:90
+  marginTop:70
 },
 buttonText: {
   textAlign: 'center',
